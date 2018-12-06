@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>EstacioneYa</title>
+	
+	<link rel="stylesheet" type="text/css" href="PanelEstilo.css">
+	<link rel="stylesheet" type="text/css" href="pantalla.css">
+	<link rel="stylesheet" type="text/css" href="button.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="leaflet/leaflet.css">
+	<link rel="stylesheet" type="text/css" href="MarkerCluster.css">
+	<link rel="stylesheet" type="text/css" href="MarkerCluster.Default.css">
+
+	<script type="text/javascript" src="MapaControlador.js"></script>
+	<script type="text/javascript" src = "leaflet/leaflet.js"></script>
+	<script type="text/javascript" src="leaflet.markercluster-src.js"></script>
+	<script type="text/javascript" src="Zona.js"></script>
+	<script type="text/javascript" src="Estacionamiento.js"></script>
+	<script type="text/javascript" src="Comercio.js"></script>
+	<script type="text/javascript" src="VistasLoader.js"></script>
+	<script type="text/javascript" src="MapaUsuario.js"></script>
+	<script type="text/javascript" src="Request.js"></script>
+	<script type="text/javascript" src="RequestUbicacion.js"></script>
+</head>
+
+<body >
+
+	<div    id="divIzquierdo">
+			<p class="pacifico">EstacionamientoYa</p>
+			<ul id ="lista">
+
+				<li onclick="cargarVistaControlador();">Ver estado general</li>
+
+				<li onclick="cargarVistaUsuario();">Ver lugares de interes</li>
+
+  				<li onclick="cargarVistaInfracciones();">Ver Infracciones</li>
+  				
+  				<li onclick="cargarVistaAcarreo();">Ver estado Acarreos</li>
+			</ul>
+	</div>
+
+	<div id = "pantalla1"  class ="vistas">
+		
+	</div>
+
+	<div id = "pantalla2" class = "vistas"></div>
+
+	<div id="pantalla3" class="pantallaInfraccion">
+		
+		<div id="divInterno1">
+			<p2>Busque infracciones con la patente</p2>
+			<br>
+			<input id = "texto" type="text" value="" placeholder="Ej.AAA123"><br>
+		<button class="button" onclick="accion();">Enviar</button>
+		</div>
+		<div id="divInterno2">
+		</div>
+		
+	</div>
+
+	<div id="pantalla4" class = "pantallaUbicacion">
+		<div id="divUbicacion">
+			<p2>Consultas de Acarreos</p2>
+			<br>
+			<input id = "idInfraccion" type="text" value="" placeholder="ID infraccion"><br>
+		<button class = "button" onclick="requestUbicacion();">Enviar</button>
+		</div>
+		<div  id="divRespUbicacion" class="fondoAcarreo">
+		</div>
+
+	</div>
+
+</body>
+</html>

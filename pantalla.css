@@ -1,0 +1,32 @@
+.vistas
+{
+	display: none;
+	z-index: -1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom:0px;
+	left:0px;
+	margin: 10px 7px 10px 7px;
+}
+
+.pantallaInfraccion
+{
+	display: none;
+	width: 80%;
+	float: right;
+}
+
+table, td {
+    border: 1px solid black;
+}
+
+.fondoAcarreo
+{
+	position:absolute;
+	top:100px; 
+	left:20%; 
+	width:500px;
+	height: 128px;
+	background-image: url("https://image.freepik.com/iconos-gratis/el-transporte-de-la-gra_318-73184.png");
+}

@@ -1,0 +1,20 @@
+#divIzquierdo
+{
+	width: 19%;
+	height: 900px;
+	float: left;
+	background-color: #294CB4;
+	z-index: -1;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+.pacifico{
+	font-family: 'Pacifico', cursive ;
+	font-size: 30px;
+	color: white;
+}
+
+li{
+	color:white;
+	cursor: pointer;
+}
