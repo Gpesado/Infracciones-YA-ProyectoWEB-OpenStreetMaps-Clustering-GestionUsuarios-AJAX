@@ -1,0 +1,2 @@
+# Infracciones-YA-ProyectoWEB-OpenStreetMaps-Clustering-GestionUsuarios-AJAX
+TP correspondiente a la materia Ingeniería de Software I dictada en la Universidad Nacional General Sarmiento. Esta pagina web permite ver un mapa de puntos de estacionamiento validos utilizando Open Street Maps, permitiendo realizar clustering de los marcadores dependiendo del zoom. Ademas se podrán ver y generar infracciones de transito consumiendo un JSON de otra pagina web (con AJAX).
